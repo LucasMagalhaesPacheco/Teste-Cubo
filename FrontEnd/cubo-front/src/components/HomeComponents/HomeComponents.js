@@ -1,9 +1,10 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import GlobalContext from '../../Global/GlobalContext'
 import DonutChart from "react-donut-chart"
+import { StyledSection, StyledTable, StyledTh} from './styled'
 
 const HomeComponents = () => {
-    const {states, setters} = useContext(GlobalContext)
+    const {states} = useContext(GlobalContext)
 
     const MembersGraphs = states.users && states.users.map((user) => {
         return {
@@ -15,19 +16,25 @@ const HomeComponents = () => {
     const allUsers = states.users && states.users.map((user)  => {
         return(
                 <tr key={user?.id}>
-                <th>{user?.firstName}</th>
-                <th>{user?.lastName}</th>
-                <th>{user?.participation}</th>
+                <StyledTh>{user?.firstName}</StyledTh>
+                <StyledTh>{user?.lastName}</StyledTh>
+                <StyledTh>{user?.participation}</StyledTh>
                 </tr>
             
         )
     })
 
-    
-
-
     return(
         <>
+        <StyledSection>
+        <StyledTable>
+        <tr>
+        <StyledTh>First Name</StyledTh>
+        <StyledTh>Last Name</StyledTh>
+        <StyledTh>Participation</StyledTh>
+        </tr>
+            {allUsers}
+        </StyledTable>
         <DonutChart 
         width={450}
         height={300}
@@ -38,14 +45,7 @@ const HomeComponents = () => {
         selectedOffset={0.05}
         rotation={0}
         />
-        <table>
-        <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Participation</th>
-        </tr>
-            {allUsers}
-        </table>
+        </StyledSection>
         </>
     )
 }
