@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import GlobalContext from '../../Global/GlobalContext'
 import DonutChart from "react-donut-chart"
-import { StyledSection, StyledTable, StyledTh} from './styled'
+import { StyledSection, StyledTable, StyledTh, StyledTh2} from './styled'
 
 const HomeComponents = () => {
     const {states} = useContext(GlobalContext)
@@ -18,7 +18,7 @@ const HomeComponents = () => {
                 <tr key={user?.id}>
                 <StyledTh>{user?.firstName}</StyledTh>
                 <StyledTh>{user?.lastName}</StyledTh>
-                <StyledTh>{user?.participation}</StyledTh>
+                <StyledTh>{user?.participation}%</StyledTh>
                 </tr>
             
         )
@@ -29,9 +29,9 @@ const HomeComponents = () => {
         <StyledSection>
         <StyledTable>
         <tr>
-        <StyledTh>First Name</StyledTh>
-        <StyledTh>Last Name</StyledTh>
-        <StyledTh>Participation</StyledTh>
+        <StyledTh2>First Name</StyledTh2>
+        <StyledTh2>Last Name</StyledTh2>
+        <StyledTh2>Participation</StyledTh2>
         </tr>
             {allUsers}
         </StyledTable>

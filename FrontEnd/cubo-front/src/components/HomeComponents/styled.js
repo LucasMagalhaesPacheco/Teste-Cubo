@@ -6,15 +6,27 @@ border-collapse: collapse;
 width: 50%;`
 
 export const StyledTh = styled.th`
-padding-top: 12px;
-padding-bottom: 12px;
+padding-top: 0.75rem;
+padding-bottom: 0.75rem;
 text-align: left;
 background-color: rgb(3, 169, 244) ;
 color: white;
-border: 1px solid #ddd;
-padding: 8px;
+border: 0.0625rem solid #ddd;
+padding: 0.5rem;
 :hover {
 background-color: rgb(233, 30, 99);  
+}`
+
+export const StyledTh2 = styled.th`
+padding-top: 0.75rem;
+padding-bottom: 0.75rem;
+text-align: left;
+background-color: rgb(233, 30, 99) ;
+color: white;
+border: 2px solid #ddd;
+padding: 0.5rem;
+:hover {
+background-color:rgb(3, 169, 244);  
 }`
 
 export const StyledSection = styled.section`
