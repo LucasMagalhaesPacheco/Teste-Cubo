@@ -9,7 +9,7 @@ e o front-end em ReactJS. No back-end, utilizei as libs express, cors, dontenv, 
 
 O deploy do Back foi feito no Heroku e API documentada pode-se encontrada no endereço: https://documenter.getpostman.com/view/21555306/2s8YRpFrE2
 
-O Front com  foi publicado por meio do vercel, no endereço: https://teste-cubo-lucas.vercel.app
+O Front com  foi publicado por meio do surge, no endereço: https://slim-power.surge.sh
 
 O Deploy do Heroku pode-ser vista: https://case-shopper-lucas-magalhaes.herokuapp.com
 
@@ -89,7 +89,7 @@ DB_SCHEMA = nome-do-banco-de-dados
 -   WorkBanch Studio
 -   Postman API Platform
 -   Heroku: Cloud Application Platform
--   Vercel
+-   Surge
 
 ### 🧑‍💻 Desenvolvedores:
 
