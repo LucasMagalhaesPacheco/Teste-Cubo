@@ -11,7 +11,7 @@ O deploy do Back foi feito no Heroku e API documentada pode-se encontrada no end
 
 O Front com  foi publicado por meio do surge, no endereço: https://slim-power.surge.sh
 
-O Deploy do Heroku pode-ser vista: https://case-shopper-lucas-magalhaes.herokuapp.com
+O Deploy do Heroku pode-ser vista: https://cubo-labenu-case.herokuapp.com
 
 ## Entidades (TypeScript)
 
