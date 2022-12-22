@@ -13,6 +13,8 @@ O Front com  foi publicado por meio do surge, no endereço: https://slim-power.s
 
 O Deploy do Heroku pode-ser vista: https://cubo-labenu-case.herokuapp.com
 
+Site fora do Ar, encontrando lugar para novo Deploy
+
 ## Entidades (TypeScript)
 
 ## Participation (Representa os participantes)
